@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "coverArt": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "description": {
+      "type": "text"
+    },
+    "childCategories": {
+      "collection": "category",
+      "via": "parentCategories",
+      "dominant": true
+    },
+    "parentCategories": {
+      "collection": "category",
+      "via": "childCategories"
+    },
+    "blogposts": {
+      "collection": "post",
+      "dominant": true,
+      "via": "categories"
+    }
+  }
+}

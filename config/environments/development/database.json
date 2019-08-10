@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "database": "hughguiney-cms",
+        "host": "127.0.0.1",
+        "srv": false,
+        "port": 27017,
+        "username": "hugh",
+        "password": "UwUF&maT74A2"
+      },
+      "options": {
+        "authenticationDatabase": "hughguiney-cms"
+      }
+    }
+  }
+}

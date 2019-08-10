@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "page",
+  "info": {
+    "name": "page",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text"
+    },
+    "coverArt": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "showTitle": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}
