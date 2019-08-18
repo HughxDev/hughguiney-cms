@@ -67,7 +67,7 @@
       "via": "related",
       "plugin": "upload"
     },
-    "blogposts": {
+    "posts": {
       "collection": "post",
       "via": "authors"
     }

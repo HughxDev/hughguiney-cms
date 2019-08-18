@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "category",
   "info": {
     "name": "category",
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "name": {
@@ -30,7 +33,10 @@
       "collection": "category",
       "via": "childCategories"
     },
-    "blogposts": {
+    "coverArtAltText": {
+      "type": "string"
+    },
+    "posts": {
       "collection": "post",
       "dominant": true,
       "via": "categories"

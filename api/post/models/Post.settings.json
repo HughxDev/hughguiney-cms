@@ -23,15 +23,21 @@
     "body": {
       "type": "text"
     },
-    "authors": {
-      "collection": "user",
-      "via": "blogposts",
-      "dominant": true,
-      "plugin": "users-permissions"
+    "coverArtAltText": {
+      "type": "string"
     },
     "categories": {
       "collection": "category",
-      "via": "blogposts"
+      "via": "posts"
+    },
+    "authors": {
+      "collection": "user",
+      "via": "posts",
+      "dominant": true,
+      "plugin": "users-permissions"
+    },
+    "publishedAt": {
+      "type": "date"
     }
   }
 }
